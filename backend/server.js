@@ -15,7 +15,7 @@ app.use(express.json())
 
 app.use(
     cors({
-      origin: 'https://lambent-croquembouche-a4ea29.netlify.app',
+      origin: 'https://playful-flan-23eaaf.netlify.app',
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
     })
   );
