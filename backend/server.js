@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5001;
 
 app.use(
     cors({
-      origin: 'https://playful-flan-23eaaf.netlify.app',
+      origin: 'https://playful-flan-23eaaffs.netlify.app',
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
     })
   );

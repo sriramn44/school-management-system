@@ -1,5 +1,5 @@
 // frontend/src/services/api.js
-const API_URL = 'https://playful-flan-23eaaf.netlify.app/api';
+const API_URL = 'https://playful-flan-23eaaffs.netlify.app/api';
 
 // Student API functions
 export const createStudent = async (studentData) => {
