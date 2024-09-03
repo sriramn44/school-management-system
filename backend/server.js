@@ -12,6 +12,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json())
 
+const PORT = process.env.PORT || 5001;
+
 
 app.use(
     cors({
@@ -42,8 +44,8 @@ app.use('/api/teachers', teacherRoutes);
 // app.use('/api/students', studentRoutes);
 // app.use('/api/teachers', teacherRoutes);
 
-app.listen(5001, () => {
-    console.log(`Server is running on port 5001`);
+app.listen(PORT, () => {
+    console.log(`Server is running.....`);
 });
 
 
