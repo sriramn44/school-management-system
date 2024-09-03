@@ -13,6 +13,12 @@ app.use(bodyParser.json());
 app.use(express.json())
 
 
+app.use(
+    cors({
+      origin: 'https://lambent-croquembouche-a4ea29.netlify.app',
+      methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    })
+  );
 
 app.use('/api/students', studentRoutes);
 app.use('/api/teachers', teacherRoutes);
@@ -39,3 +45,5 @@ app.use('/api/teachers', teacherRoutes);
 app.listen(5001, () => {
     console.log(`Server is running on port 5001`);
 });
+
+
