@@ -1,9 +1,9 @@
 // frontend/src/services/api.js
-const API_URL = 'https://beautiful-capybara-ba3031.netlify.app/api';
+const API_URL = 'https://beautiful-capybara-ba3031.netlify.app';
 
 // Student API functions
 export const createStudent = async (studentData) => {
-  const response = await fetch(`${API_URL}/students`, {
+  const response = await fetch(`${API_URL}/api/students`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -15,7 +15,7 @@ export const createStudent = async (studentData) => {
 };
 
 export const getStudents = async () => {
-  const response = await fetch(`${API_URL}/students`);
+  const response = await fetch(`${API_URL}/api/students`);
   if (!response.ok) throw new Error('Failed to fetch students');
   // console.log("1");
   // console.log(response.json())
@@ -24,7 +24,7 @@ export const getStudents = async () => {
 
 // Teacher API functions
 export const createTeacher = async (teacherData) => {
-  const response = await fetch(`${API_URL}/teachers`, {
+  const response = await fetch(`${API_URL}/api/teachers`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ export const createTeacher = async (teacherData) => {
 };
 
 export const getTeachers = async () => {
-  const response = await fetch(`${API_URL}/teachers`);
+  const response = await fetch(`${API_URL}/api/teachers`);
   if (!response.ok) throw new Error('Failed to fetch teachers');
   return response.json();
 };
