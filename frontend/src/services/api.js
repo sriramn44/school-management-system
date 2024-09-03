@@ -1,5 +1,5 @@
 // frontend/src/services/api.js
-const API_URL = 'http://localhost:5001/api';
+const API_URL = 'https://beautiful-capybara-ba3031.netlify.app/api';
 
 // Student API functions
 export const createStudent = async (studentData) => {
